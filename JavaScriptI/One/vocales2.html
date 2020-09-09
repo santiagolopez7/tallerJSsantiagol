@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taller</title>
+</head>
+
+<body>
+    <script>
+
+        //Escribe un programa que pida una frase y escriba cuántas de las letras que tiene son vocales
+
+        var t = prompt("Escribe una frase: ","");
+        t = t.toLowerCase(); //convertirlas minusculas
+        var voc;
+        var i;
+        var cont = 0;
+        var v;
+        for(i=0; i<t.length; i++){
+            voc = t.charAt(i);
+
+            if((voc == "a") || (voc == "e") || (voc == "i") || (voc == "o") || (voc == "u")){               
+              cont++;  
+
+            }
+        }
+         
+        document.write("Numero de vocales que hay en esta frase: " + cont );
+
+
+
+
+    </script>
+</body>
+
+</html>

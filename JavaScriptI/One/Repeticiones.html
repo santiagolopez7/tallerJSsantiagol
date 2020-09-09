@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taller</title>
+</head>
+
+<body>
+    <script>
+
+        //Escribe un programa que pida una frase y escriba cuantas veces aparece la letra a
+
+        var t = prompt("Escribe una frase: ","");
+        t = t.toLowerCase(); //convertirlas minusculas
+        var voc;
+        var i;
+        var cont = 0;
+         
+        for(i=0; i<t.length; i++){
+            voc = t.charAt(i);
+
+            if((voc == "a")){
+            cont++;
+            }
+        }
+         
+        document.write("Numero de A " + cont );
+
+
+
+
+    </script>
+</body>
+
+</html>
